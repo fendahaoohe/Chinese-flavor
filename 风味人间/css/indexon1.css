@@ -1,0 +1,108 @@
+
+:root {
+    --bg-color: #eaecf0;
+    --main-color: rgb(249, 225, 3);
+    --nav-item-width: 100px;
+    --nav-item-height: 32px;
+    --nav-item-border-width: 4px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+body {
+
+    display: flex-wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    position: relative;
+    background:(229,66,47);
+    border-radius: 24px;
+    font-size: 0;
+    padding: var(--nav-item-border-width);
+    z-index: 1;
+}
+
+.nav-item {
+    width: var(--nav-item-width);
+    height: var(--nav-item-height);
+    font-size: 25px;
+    color: var(--main-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: color .3s ease-in-out;
+}
+
+.nav>input[type="radio"] {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.nav>input[type="radio"]:checked+label {
+    color:rgb(229, 66, 47);
+}
+
+.tracker {
+    width: var(--nav-item-width);
+    height: var(--nav-item-height);
+    background:rgb(249, 247, 2);
+    z-index: -1;
+    position: absolute;
+    left: center;
+    top: var(--nav-item-border-width);
+    border-radius: 24px;
+    transition: transform .3s ease-in-out;
+}
+
+#nav-item-opt-2:checked~.tracker {
+    transform: translateX(calc(var(--nav-item-width)));
+}
+
+#nav-item-opt-3:checked~.tracker {
+    transform: translateX(calc(var(--nav-item-width)*2));
+}
+#nav-item-opt-4:checked~.tracker {
+    transform: translateX(calc(var(--nav-item-width)*3));
+}
+
+#nav-item-opt-5:checked~.tracker {
+    transform: translateX(calc(var(--nav-item-width)*4));
+}
+
+#nav-item-opt-6:checked~.tracker {
+    transform: translateX(calc(var(--nav-item-width)*5));
+}
+
+#nav-item-opt-7:checked~.tracker {
+    transform: translateX(calc(var(--nav-item-width)*6));
+}
+
+#nav-item-opt-8:checked~.tracker {
+    transform: translateX(calc(var(--nav-item-width)*7));
+}
+
+#nav-item-opt-9:checked~.tracker {
+    transform: translateX(calc(var(--nav-item-width)*8));
+}
+
+#nav-item-opt-10:checked~.tracker {
+    transform: translateX(calc(var(--nav-item-width)*9));
+}
+
+
+
+
+

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>烤鱿鱼</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <style>
+    .section-title {
+      color: #f33;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .card-header {
+      font-weight: bold;
+      border-bottom: none;
+      background-color: transparent;
+      padding-bottom: 0;
+    }
+    .ingredient-item {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+    .ingredient-amount {
+      font-size: 0.9rem;
+      color: gray;
+    }
+      .circle-icon {
+    width: 16px;
+    height: 16px;
+    border: 5px solid #ff5c5c; /* 外圈红色 */
+    border-radius: 50%;
+    background-color: white;   /* 中间空心 */
+    box-sizing: border-box;
+    }
+    #scrollUp {
+    background: rgb(249,225,3);
+    height: 35px;
+    width: 35px;
+    right: 50px;
+    bottom: 77px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 34px;
+    }
+  </style>
+</head>
+<body class="p-4">
+  <div class="container" style="max-width: 50%;">
+
+    <!-- 成品图展示区 -->
+    <div class="text-center mb-4">
+      <h1 class="fw-bold">烤鱿鱼</h1>
+      <img src="jpg/烤鱿鱼/as1.jpg" class="img-fluid" alt="烤鱿鱼成品图">
+    </div>
+
+    <!-- 食材明细标题 -->
+    <div class="d-flex align-items-center mb-3">
+        <div class="circle-icon me-2"></div>
+        <h5 class="m-0 fw-bold text-danger">食材明细</h5>
+    </div>
+    <!-- 主料 -->
+    <div class="card mb-3">
+      <div class="card-header">主料</div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-auto ingredient-item">鱿鱼</div>
+          <div class="col-auto ingredient-amount">1个</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 辅料 -->
+    <div class="card mb-3">
+      <div class="card-header">辅料</div>
+      <div class="card-body">
+        <div class="row text-center">
+          <div class="col-4">
+            <div class="ingredient-item">彩椒</div>
+            <div class="ingredient-amount">适量</div>
+          </div>
+          <div class="col-4">
+            <div class="ingredient-item">洋葱</div>
+            <div class="ingredient-amount">适量</div>
+          </div>
+          <div class="col-4">
+            <div class="ingredient-item">香菜</div>
+            <div class="ingredient-amount">适量</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 配料 -->
+    <div class="card mb-3">
+      <div class="card-header">配料</div>
+      <div class="card-body">
+        <div class="row text-center">
+          <div class="col-3">
+            <div class="ingredient-item">辣椒粉</div>
+            <div class="ingredient-amount">适量</div>
+          </div>
+          <div class="col-3">
+            <div class="ingredient-item">姜</div>
+            <div class="ingredient-amount">适量</div>
+          </div>
+          <div class="col-3">
+            <div class="ingredient-item">五香粉</div>
+            <div class="ingredient-amount">适量</div>
+          </div>
+          <div class="col-3">
+            <div class="ingredient-item">孜然粉</div>
+            <div class="ingredient-amount">适量</div>
+          </div>
+          <div class="col-3">
+            <div class="ingredient-item">胡椒粉</div>
+            <div class="ingredient-amount">适量</div>
+          </div>
+          <div class="col-3">
+            <div class="ingredient-item">油盐</div>
+            <div class="ingredient-amount">适量</div>
+          </div>
+          <div class="col-3">
+            <div class="ingredient-item">生抽</div>
+            <div class="ingredient-amount">适量</div>
+          </div>
+          <div class="col-3">
+            <div class="ingredient-item">料酒</div>
+            <div class="ingredient-amount">适量</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 口味等 -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="row text-center">
+          <div class="col-3">
+            <div class="ingredient-item">微辣</div>
+            <div class="ingredient-amount">口味</div>
+          </div>
+          <div class="col-3">
+            <div class="ingredient-item">烤</div>
+            <div class="ingredient-amount">工艺</div>
+          </div>
+          <div class="col-3">
+            <div class="ingredient-item">一小时</div>
+            <div class="ingredient-amount">耗时</div>
+          </div>
+          <div class="col-3">
+            <div class="ingredient-item">普通</div>
+            <div class="ingredient-amount">难度</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 做法步骤标题 -->
+     <div class="d-flex align-items-center mb-3">
+        <div class="circle-icon me-2"></div>
+        <h5 class="m-0 fw-bold text-danger">烤鱿鱼的做法步骤</h5>
+    </div>
+    <!-- 步骤 1 -->
+    <div class="row mb-4 align-items-start">
+      <div class="col-3">
+        <img src="jpg/烤鱿鱼/as2.jpg" class="img-fluid" alt="步骤1">
+      </div>
+      <div class="col-9">
+        <p><strong>1</strong></p>
+        <p>鱿鱼整洗净沥干水，在反面划上花刀；</p>
+      </div>
+    </div>
+
+    <!-- 步骤 2 -->
+    <div class="row mb-4 align-items-start">
+      <div class="col-3">
+        <img src="jpg/烤鱿鱼/as3.jpg" class="img-fluid" alt="步骤2">
+      </div>
+      <div class="col-9">
+        <p><strong>2</strong></p>
+        <p>碗中放入辣酱、生抽、五香粉、料酒、姜片；</p>
+      </div>
+    </div>
+
+    <!-- 步骤 3 -->
+    <div class="row mb-4 align-items-start">
+      <div class="col-3">
+        <img src="jpg/烤鱿鱼/as4.jpg" class="img-fluid" alt="步骤3">
+      </div>
+      <div class="col-9">
+        <p><strong>3</strong></p>
+        <p>拌匀后放入鱿鱼腌制 3 小时以上；</p>
+      </div>
+    </div>
+
+    <!-- 步骤 4 -->
+    <div class="row mb-4 align-items-start">
+      <div class="col-3">
+        <img src="jpg/烤鱿鱼/as5.jpg" class="img-fluid" alt="步骤4">
+      </div>
+      <div class="col-9">
+        <p><strong>4</strong></p>
+        <p>洋葱和彩椒切丝，垫在铺有锡纸的烤盘上，再在上面撒上些黑胡椒碎；</p>
+      </div>
+    </div>
+
+     <!-- 步骤 5 -->
+    <div class="row mb-4 align-items-start">
+      <div class="col-3">
+        <img src="jpg/烤鱿鱼/as6.jpg" class="img-fluid" alt="步骤4">
+      </div>
+      <div class="col-9">
+        <p><strong>5</strong></p>
+        <p>将腌好的鱿鱼串在竹签上，放入铺好洋葱的烤盘中；</p>
+      </div>
+    </div>
+
+     <!-- 步骤 6 -->
+    <div class="row mb-4 align-items-start">
+      <div class="col-3">
+        <img src="jpg/烤鱿鱼/as7.jpg" class="img-fluid" alt="步骤4">
+      </div>
+      <div class="col-9">
+        <p><strong>6</strong></p>
+        <p>将它刷上腌制时的料汁，再在表面刷层油；</p>
+      </div>
+    </div>
+
+     <!-- 步骤 7 -->
+    <div class="row mb-4 align-items-start">
+      <div class="col-3">
+        <img src="jpg/烤鱿鱼/as8.jpg" class="img-fluid" alt="步骤5">
+      </div>
+      <div class="col-9">
+        <p><strong>7</strong></p>
+        <p>烤箱预热220度，中层烤先烤10分钟后取出，再刷上酱汁，撒上辣椒粉、孜然粒；</p>
+      </div>
+    </div>
+    <!-- 步骤 8 -->
+    <div class="row mb-4 align-items-start">
+      <div class="col-3">
+        <img src="jpg/烤鱿鱼/as9.jpg" class="img-fluid" alt="步骤4">
+      </div>
+      <div class="col-9">
+        <p><strong>8</strong></p>
+        <p>拿出翻面，再撒辣椒粉、孜然粉、孜然粒，再进烤箱烤10分钟左右，出来切开转盘即可。</p>
+      </div>
+    </div>
+
+    <!-- 小窍门 -->
+    <div class="mt-5">
+    <div class="d-flex align-items-center mb-3">
+        <div class="circle-icon me-2"></div>
+        <h5 class="m-0 fw-bold text-danger">小窍门</h5>
+    </div>
+    <div class="ps-1">
+        <p>1. 处理鱿鱼时一定要把表面的膜去掉，再在反面打上花刀，这样更入味；很多市场和超市都可以帮助你这样处理；</p>
+        <p>2. 腌制鱿鱼时加入姜，五香粉、生抽、盐、辣椒酱、胡椒等调味料，搅拌均匀，时间三个小时以上，中间多拿出来翻个面；</p>
+        <p>3. 在烤盘上铺有锡纸，这样做起烤盘卫生更方便；铺在上面的洋葱，不仅起隔离作用，而且使鱿鱼味道更鲜美；</p>
+        <p>4. 用牙签固定鱿鱼，要不烤制时很容易卷起，不能烤制均匀；</p>
+        <p>5. 腌制过程中将料汁刷在其表面，再刷一层油；记得中间拿出来翻面，每次翻面时都要重复，刷上酱汁，撒上辣椒粉、孜然粒；最后每面烤两次；</p>
+        <p>6. 烤好后将垫底的洋葱和彩椒铺在盘子上，将鱿鱼切开摆好，上面撒些香菜末。</p>
+        <p>使用的厨具：电烤箱</p>
+        <p>所属分类： 烘焙   热菜   海鲜   常见菜式   荤菜   儿童   老人   夏季食谱   宴客菜   午餐  </p>
+    </div>
+    </div>
+    <hr>
+    <div class="row">
+            <center style="padding-top: 15px;"><p>风味人间CQ | &copy;版权所有</p></center>
+            <center><p>联系我们 | 邮箱:eotjs1433@163.com | 电话号码:18641267537</p></center>
+    </div>
+    <a id="scrollUp" href="美食制作.html" style="position: fixed; z-index: 2147483647; display: block;"><i class="fas fa-angle-up">6</i></a>
+  </div>
+
+</body>
+</html>

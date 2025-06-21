@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>带侧边锚链接导航栏的页面</title>
+    <!-- 引入 Bootstrap 样式表 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        /* 自定义样式 */
+        body {
+            padding-left: 200px; /* 为侧边导航栏留出空间 */
+            background-color: #f8f9fa; /* 背景颜色 */
+        }
+        .border{
+            border:3px;
+        }
+        .side-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 200px;
+            background-color: #2c3e50; /* 导航栏背景色 */
+            color: white; /* 导航栏文字颜色 */
+            border-right: 1px solid #ddd;
+            display: flex;
+            flex-direction: column; /* 让元素垂直排列 */
+            align-items: flex-start; /* 将元素向左对齐 */
+            padding-top: 20px;
+        }
+        .side-navbar a {
+            display: block;
+            padding: 10px 15px;
+            color: #1abc9c; /* 链接颜色 */
+            text-decoration: none;
+            width: 100%; /* 链接占满导航栏宽度 */
+        }
+        .side-navbar a:hover {
+            background-color: #34495e; /* 悬停时的背景色 */
+            color: white; /* 悬停时的字体颜色 */
+        }
+        .side-navbar a.active {
+            background-color: #1abc9c; /* 活动链接的背景色 */
+            color: white;
+        }
+        .section {
+            padding: 100px 0; /* 每个部分增加内边距，方便跳转 */
+        }
+        .Nah{
+            padding: 150px 0; /* 每个部分增加内边距，方便跳转 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- 侧边导航栏开始 -->
+    <nav class="side-navbar">
+        <a class="navbar-brand" href="#" style="color: white;">著名美食</a>
+        <!-- 这是锚链接，跳转到页面不同部分 -->
+        <a class="nav-link" href="../index.html">首页</a>
+        <a class="nav-link" href="#section2">红烧排骨</a>
+        <a class="nav-link" href="#section3">椒香啤酒基围虾</a>
+        <a class="nav-link" href="#section4">可乐鸡翅</a>
+        <a class="nav-link" href="#section5">糖醋里脊</a>
+        <a class="nav-link" href="#section6">川味凉粉</a>
+        <a class="nav-link" href="#section7">番茄土豆炖牛腩</a>
+        <a class="nav-link" href="#section8">烤鱿鱼</a>
+    </nav>
+    <!-- 侧边导航栏结束 -->
+
+
+    
+    <!-- 页面主要内容 -->
+    <div class="container-fluid">
+        <!-- 各个部分的内容，设置了对应的锚点 id -->
+        <div id="section1">
+            <div class="row">
+                <div class="col-lg-8">
+                    <center><h1>"味觉之旅 · 美味收藏"</h1></center>
+                    <p style="padding-top: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美食不仅仅是味蕾的享受，更承载着文化与情感的联结。每一道菜肴背后，都藏着独特的故事——可能是妈妈的家常味道，异国旅行的记忆，又或是深夜厨房里的灵感迸发。我们通过美食探索世界，用酸甜苦辣咸记录生活。无论是精心烹制的宴客大菜，还是快手简单的深夜食堂，食物总能以最直接的方式传递温暖与幸福。
+
+                    <p>这个美食网页，正是为了收藏和分享这些美好滋味而存在。在这里，你可以：</p>
+
+                    <p>发现灵感：从经典家常到创意料理，每一道菜谱都经过精心整理，详细记录用料、步骤与技巧，让你轻松复刻美味。</p>
+
+                    <p>提升厨艺：无论是新手还是老饕，都能找到适合自己的内容，从基础刀工到高阶调味，逐步解锁烹饪的乐趣。</p>
+
+                    <p>分享热爱：美食因分享而更美味，欢迎上传你的独家菜谱，或是在评论区交流心得，让烹饪成为连接彼此的桥梁。</p>
+
+                    <p>我们相信，烹饪是一场充满惊喜的冒险，而每一道成功的菜肴，都是对生活最好的致敬。现在，就让我们一起开启这场美味的旅程吧！</p>
+                </div>
+                <div class="col-lg-4" style="padding-top: 25px;">
+                    <img src="jpg/3.jpg" width="100%">
+                </div>
+            </div>
+        </div>
+        <hr style="border: 1px solid #e6e6e6;"></hr>
+        <div id="section2" class="section">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>红烧排骨</h1>
+                    <p style="padding-top: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;红烧排骨是中国经典家常菜，以酱香浓郁、肉质酥烂著称。选用新鲜猪肋排为主料，焯水去腥后，用冰糖炒出琥珀色糖色，赋予排骨红亮诱人的色泽。加入姜片、八角、桂皮等香料爆香，淋入料酒、生抽、老抽调味，注入热水慢炖40分钟，让肉质吸饱酱汁。关键步骤在于收汁——大火将汤汁熬至粘稠，裹满每块排骨，撒上白芝麻或葱花点缀。成品咸甜交织，轻轻一咬便骨肉分离，酱香渗透肌理，搭配米饭堪称绝配。此菜讲究火候与调味平衡，既保留猪肉原香，又凸显醇厚层次，是宴客与家常皆宜的味觉盛宴。</p>
+                </div>
+                <div class="col-lg-4">
+                    <a href="红烧排骨.html">
+                    <img src="jpg/红烧排骨/qw.jpg" width="100%">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr style="font-weight: 800;"></hr>
+        <div id="section3" class="section">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>椒香啤酒基围虾</h1>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;椒香啤酒基围虾是一道色香味俱佳的美食，选用新鲜的基围虾，搭配啤酒和各种香料，经过精心烹制，虾肉鲜嫩，味道独特。制作时，先将基围虾洗净，剪去虾须和虾脚，然后用啤酒、葱姜蒜、干辣椒等调料腌制入味。接着，热锅凉油，放入腌制好的虾，快速翻炒至变色，再加入啤酒焖煮，最后撒上香葱和香菜，增添风味。这道菜不仅适合家庭聚餐，也非常适合与朋友分享，搭配一杯冰啤酒，简直是人间美味。</p>
+                </div>
+                <div class="col-lg-4">
+                    <a href="椒香啤酒基围虾.html">
+                    <img src="jpg/椒香啤酒基围虾/1.jpg" width="100%">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr style="border: 1px solid #e6e6e6;"></hr>
+        <div id="section4" class="section">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>可乐鸡翅</h1>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可乐鸡翅是一道融合甜咸风味的创意菜，凭借可乐的焦糖香气与鸡翅的鲜嫩口感风靡餐桌。制作时，先将鸡翅两面划刀，焯水去腥后煎至金黄，逼出油脂。关键步骤在于用可乐代替糖色——倒入一罐可乐（约300ml），与生抽、老抽、姜片、八角同炖，碳酸能软化肉质，糖分形成晶莹挂汁。大火煮沸后转小火焖15分钟，最后收汁至浓稠，撒上白芝麻。成品色泽酱红透亮，入口先尝到可乐的甜润，随后是酱油的咸鲜，肉质滑嫩脱骨，汁水充沛。这道菜巧妙利用碳酸饮料的特性，既省去炒糖色的繁琐，又赋予传统食材年轻化的味觉体验。</p>
+                </div>
+                <div class="col-lg-4">
+                    <a href="可乐鸡翅.html">
+                    <img src="jpg/可乐鸡翅/qw.jpg" width="100%">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr style="border: 1px solid #e6e6e6;"></hr>
+        <div id="section5" class="section">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>糖醋里脊</h1>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;糖醋里脊是中国经典传统名菜，属浙菜系，以"外酥里嫩、酸甜适口"闻名。选用猪里脊肉为主料，切条后以盐、料酒腌制，裹上鸡蛋面糊炸至金黄酥脆。灵魂在于糖醋汁的调配——按1:1比例熬化冰糖与米醋，加入番茄酱提色，辅以少量生抽平衡酸甜。快火收汁至粘稠起泡时，倒入复炸后的里脊快速颠锅，使每块肉均匀挂上琥珀色酱汁，最后撒上熟白芝麻。成品色泽红亮诱人，咬下时脆壳"咔嚓"作响，内里肉质弹嫩，酸甜汁在舌尖跳跃却不腻口，常配菠萝块或黄瓜片解腻。这道菜考验火候掌控，完美诠释中餐"锅气"精髓。</p>
+                </div>
+                <div class="col-lg-4">
+                    <a href="糖醋里脊.html">
+                    <img src="jpg/糖醋里脊/qw.jpg" width="100%">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr style="border: 1px solid #e6e6e6;"></hr>
+        <div id="section6" class="Nah">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>川味凉粉</h1>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;川味凉粉是四川经典街头小吃，以"麻辣鲜香、冰爽滑嫩"著称。传统做法选用豌豆淀粉调浆，沸水中搅拌至透明后冷凝定型，切成晶莹剔透的条状。灵魂在于红油调料——菜籽油烧至七成热，泼入辣椒面与花椒粉激发出复合香气，配以蒜泥、酱油、保宁醋调成酸辣汁。上桌时凉粉如白玉颤动，浇上鲜红油辣子，撒花生碎、葱花、芽菜末，最后淋一勺灵魂花椒油。入口先是冰凉的滑嫩感，随即麻辣浪潮席卷舌尖，酸香回味中带着坚果香气，暑天食用尤能体会"冰火两重天"的巴蜀饮食哲学。这道小吃完美展现川菜"味型多变"的精髓。</p>
+                </div>
+                <div class="col-lg-4">
+                    <a href="川味凉粉.html">
+                    <img src="jpg/川味凉粉/0.jpg" width="100%">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr style="border: 1px solid #e6e6e6;"></hr>
+        <div id="section7" class="Nah">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>番茄土豆炖牛腩</h1>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;番茄土豆炖牛腩是一道温暖治愈的家常硬菜，完美诠释了"酸甜浓香、酥烂入味"的炖煮美学。精选牛腩肉切块冷水下锅，加葱姜料酒焯去血沫，与炒香的洋葱、八角、香叶一同投入砂锅。关键步骤在于番茄的两次加入——首批炒至融化形成醇厚汤底，第二批在收汁时保留果肉口感。土豆切滚刀块中途加入，既吸收肉香又维持棱角分明。小火慢炖90分钟后，牛腩纤维裹挟着番茄的鲜酸，土豆绵沙化开融入汤汁，最后撒上胡椒粉与香菜。成品金红油亮，牛肉酥而不柴，汤汁浓稠可拌饭，酸甜中透着香料的后韵，是秋冬餐桌最动人的暖意。</p>
+                </div>
+                <div class="col-lg-4">
+                    <a href="番茄土豆炖牛腩.html">
+                    <img src="jpg/番茄土豆炖牛腩/qw.jpg" width="100%">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr style="border: 1px solid #e6e6e6;"></hr>
+        <div id="section8" class="Nah">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>烤鱿鱼</h1>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;烤鱿鱼是一道受欢迎的海鲜美食，通常在街头小吃摊位上可以找到。制作时，首先将新鲜的鱿鱼清洗干净，去除内脏和骨头，然后切成适当的块状。接着，用橄榄油、蒜末、辣椒粉、盐和黑胡椒等调料腌制鱿鱼，腌制时间一般为30分钟至1小时。最后，将腌制好的鱿鱼串在烤签上，放在炭火上烤制，期间不断翻动，以确保均匀受热。烤好的鱿鱼外焦里嫩，散发着诱人的香气，搭配柠檬汁和香菜，味道更加鲜美。这道菜不仅适合当作主菜，也可以作为下酒小吃，深受食客喜爱。</p>
+                </div>
+                <div class="col-lg-4">
+                    <a href="烤鱿鱼.html">
+                    <img src="jpg/烤鱿鱼/as1.jpg" width="100%">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <center style="padding-top: 15px;"><p>风味人间CQ | &copy;版权所有</p></center>
+            <center><p>联系我们 | 邮箱:eotjs1433@163.com | 电话号码:18641267537</p></center>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

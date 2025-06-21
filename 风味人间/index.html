@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/indexon1.css">
+        
+        <link rel="stylesheet" href="css/indexon2.css">
+
+        <link rel="stylesheet" href="css/indexon3.css">
+
+        <link rel='stylesheet' href="css/indexon4.css">
+        
+        <link rel="stylesheet" href="css/indexon5.css">
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <style>
+            body{
+                text-decoration:none
+            }
+            #scrollUp {
+                background: rgb(249,225,3);
+                height: 35px;
+                width: 35px;
+                right: 50px;
+                bottom: 77px;
+                color: #fff;
+                font-size: 20px;
+                text-align: center;
+                border-radius: 50%;
+                font-size: 20px;
+                line-height: 34px;
+            }
+
+            .zc{
+                font-size: 48px;
+                font-family: 华文新魏;
+                font-style: oblique;
+                padding-left: 25px;
+                color: rgb(249, 225, 3);
+            }
+
+            .lg{
+                top: 15px;
+                font-size: 28px;
+                color: rgb(255,165,0);
+            }
+
+            .gy{
+                font-size: 18px;
+                padding-top: 25px;
+            }
+            .decn{
+                background-color: rgb(37, 15, 142);
+                color: rgba(249, 249, 2, 0.79);
+                font-size: 16px;
+
+            }
+            .mm{
+				        color:rgb(229, 66, 47);
+			      }
+            .jk{
+                text-decoration: none;
+                color:rgb(249, 225, 3);
+            }
+            .jk:hover{
+                color:rgb(229, 66, 47);
+                text-decoration: none;
+            }
+            .jk:focus{
+                color: rgb(229, 66, 47);
+            }
+
+
+            @import url("css/indexon6.css");
+.tabs {
+  --tab-links-height: 80px;
+  --tab-links-bg: linear-gradient(135deg, #e5eaf1 0%, #b9c5d8 100%);
+  --tab-links-overlay: linear-gradient(
+    135deg,
+    #2cd8d5 0%,
+    #6b8dd6 38%,
+    #d73747 100%
+  );
+  --tab-link-bg: linear-gradient(
+    90deg,
+    transparent 70%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  width: 100%;
+  max-width: 600px;
+  min-width: 300px;
+  font-family: Lato, sans-serif;
+}
+.tabs .tabs__links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--tab-links-height);
+  background: var(--tab-links-bg);
+  list-style-type: none;
+}
+@media screen and (max-width: 750px) {
+  .tabs .tabs__links {
+    height: calc(var(--tab-links-height) / 2);
+  }
+}
+.tabs .tabs__links li {
+  flex: 1;
+}
+.tabs .tabs__links li .tabs__link {
+  all: unset;
+  position: relative;
+  height: var(--tab-links-height);
+  width: 100%;
+  background: var(--tab-link-bg);
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.3s;
+}
+@media screen and (max-width: 750px) {
+  .tabs .tabs__links li .tabs__link {
+    height: calc(var(--tab-links-height) / 2);
+    font-size: 12px;
+  }
+}
+.tabs .tabs__links li .tabs__link::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: var(--tab-links-overlay);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s ease-in-out;
+}
+.tabs .tabs__links li .tabs__link .tabs__link__text {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.6;
+  transition: 0.5s;
+}
+.tabs .tabs__links li .tabs__link .tabs__link__text::before {
+  position: absolute;
+  content: attr(data-text);
+  top: 160%;
+  z-index: -1;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  opacity: 0.1;
+  transition: 1.2s ease-out;
+}
+@media screen and (max-width: 750px) {
+  .tabs .tabs__links li .tabs__link .tabs__link__text::before {
+    display: none;
+  }
+}
+.tabs .tabs__links li .tabs__link:hover::before {
+  transform: scaleY(1);
+}
+.tabs .tabs__links li .tabs__link:hover .tabs__link__text {
+  color: white;
+  opacity: 1;
+}
+.tabs .tabs__links li .tabs__link:hover .tabs__link__text::before {
+  transform: translateY(-300%);
+}
+.tabs .tabs__links li .tabs__link.active {
+  transform: scaleY(1.4);
+  background: white;
+}
+.tabs .tabs__links li .tabs__link.active::before {
+  transform: scaleY(0.05);
+}
+.tabs .tabs__links li .tabs__link.active .tabs__link__text {
+  transform: scaleY(0.714);
+}
+.tabs .tabs__links li .tabs__link.active .tabs__link__text, .tabs .tabs__links li .tabs__link.active:hover .tabs__link__text {
+  background: var(--tab-links-overlay);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  opacity: 1;
+}
+.tabs .tabs__contents {
+  position: relative;
+  margin-top: 0;
+  padding: 40px 60px;
+  background: white;
+  list-style-type: none;
+  transition: 1s;
+}
+.tabs .tabs__contents::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: var(--tab-links-overlay);
+}
+.tabs .tabs__contents .tabs__content {
+  display: none;
+  min-height: 200px;
+  font-weight: 300;
+  line-height: 1.8;
+  opacity: 0;
+  transform: translateY(30%);
+  -webkit-animation: fadeIn 0.6s forwards;
+          animation: fadeIn 0.6s forwards;
+}
+.tabs .tabs__contents .tabs__content.active {
+  display: block;
+}
+
+@-webkit-keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <!--导航栏-->
+            <div class="row" style="background-color: rgb(227,42,21);">
+                <div class="col-lg-3 zc">中华美食</div>
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6" style="padding-top: 15px;padding-left: 100px;">
+                    <nav class="nav">
+     
+                        <input type="radio" name="nav-item-opt" id="nav-item-opt-1" checked>
+                        <label class="nav-item" for="nav-item-opt-1"><a href="index.html" class="mm">首页</a></label>
+                        
+                        <input type="radio" name="nav-item-opt" id="nav-item-opt-2">
+                        <label class="nav-item" for="nav-item-opt-2"><a href="菜系.html" class="jk">菜系</a></label>
+                
+                        <input type="radio" name="nav-item-opt" id="nav-item-opt-3">
+                        <label class="nav-item" for="nav-item-opt-3"><a href="666.html" class="jk">分类</a></label>
+
+                        <input type="radio" name="nav-item-opt" id="nav-item-opt-4">
+                        <label class="nav-item" for="nav-item-opt-4"><a href="反馈.html" class="jk">反馈</a></label>
+
+                        <input type="radio" name="nav-item-opt" id="nav-item-opt-5">
+                        <label class="nav-item" for="nav-item-opt-5"><a href="美食制作/美食制作.html" class="jk">菜谱</a></label>
+                
+                        <input type="radio" name="nav-item-opt" id="nav-item-opt-5">
+                        <label class="nav-item" for="nav-item-opt-5"><a href="结束.html" class="jk">结束语</a></label>
+
+                        <div class="tracker"></div>
+                    </nav>
+                </div>        
+            </div>
+
+
+            <!--首行-->
+            <div class="row">
+                <div class="col-lg-12"></div>
+                <img src="img/f4.jpg" width="100%">
+                <div class="row">
+                    <div id="app">
+                        <transition name="page" :duration="1300">
+                            <div class="page" :is="page" @change-page="onChangePage"></div>
+                        </transition>
+                    </div>
+                    <script id="start" type="text/x-template">
+                        <div class="start">
+                            <a href="菜系.html"> 
+                            <div class="inner"> 
+                                <div class="button-wrapper enter-2" style="padding-top: 568px;font-size: 25px;">
+                                    <button class="button button-start" type="button" @click="$emit('change-page', '')"><span class="button-text">出&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发</span></button>
+                                </div>
+                            </div>
+                            </a>    
+                        </div>
+                    </script>
+
+                    <script src="js/indexon1.js"></script>
+
+                    <script src="js/indexon2.js"></script>
+
+                    <script id="rendered-js" >
+                        Vue.config.productionTip = false;
+            
+                        Vue.component('start', {
+                        template: '#start' });
+
+            
+                        Vue.component('next', {
+                        template: '#next' });
+            
+            
+                        new Vue({
+                        el: '#app',
+            
+                        data: {
+                            page: 'start' },
+            
+            
+                        methods: {
+                            onChangePage(to) {
+                            this.page = to;
+                            } } });
+                        //# sourceURL=pen.js
+                    </script>
+                </div>
+            </div>
+
+
+            <!--空白图片-->
+            <div class="row"><img src="img/无标题.png" alt=""></div>
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5">
+                        <div class="tabs">
+                        <ul class="tabs__links">
+                        <li>
+                            <button class="tabs__link">
+                            <span class="tabs__link__text" data-text="Tab 1" style="font-size: 20px;">饮食</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="tabs__link">
+                            <span class="tabs__link__text" data-text="Tab 2" style="font-size: 20px;">菜系</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="tabs__link">
+                            <span class="tabs__link__text" data-text="Tab 3" style="font-size: 20px;">美食文化</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="tabs__link">
+                            <span class="tabs__link__text" data-text="Tab 4" style="font-size: 20px;">烹饪</span>
+                            </button>
+                        </li>
+                        </ul>
+                        <ul class="tabs__contents">
+                        <li>
+                            <div class="tabs__content">
+                                饮食是一种文化，是物质文化和社会风俗各部分中最能反映民族和地区特色的一个组成部分。中华美食誉满天下。中国饭好吃，外国人爱吃也是不争的事实。
+                                中国的饮食文化源远流长。几千年来，人们经过不断的总结已形成了中华美食的八大菜系，即鲁、川、粤、闽、苏、浙、湘、皖流派。
+                                一个菜系的形成和它的悠久历史与独到的烹饪特色分不开的。同时也受到这个地区的自然地理、气候条件、资源特产、饮食习惯等影响。
+                                有人把“八大菜系”用拟人化的手法描绘为：苏、浙菜好比清秀素丽的江南美女；鲁、皖菜犹如古拙朴实的北方健汉；粤、闽菜宛如风流典雅的公子；川、湘菜就像内涵丰富充实、才艺满身的名士。
+                                中国“八大菜系”的烹调技艺各具风韵，其菜肴之特色也各有千秋。中原文化历史悠久，文化底蕴丰厚。中原菜是八大菜系的根源。
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tabs__content">
+                                菜系是在选料、切配、烹饪等技艺方面，经长期演变而自成体系，具有鲜明的地方风味特色，并为社会所公认的中国饮食的菜肴流派。
+                                中国饮食文化的菜系，是指在一定区域内，由于气候、地形、历史、物产及饮食风俗的不同，经过漫长历史演变而形成的一整套自成体系的烹饪技艺和风味，并被全国各地所承认的地方菜肴。
+                                早在商周时期中国的膳食文化已有雏形，以太公望最为代表，再到春秋战国的齐桓公时期，饮食文化中南北菜肴风味就表现出差异。到唐宋时，南食、北食各自形成体系。到了南宋时期，南甜北咸的格局形成。在清朝初年，川菜、鲁菜、淮扬菜、粤菜，成为当时最有影响的地方菜，被称作四大菜系。到了清朝末年，浙江菜、闽菜、湘菜、徽菜四大新地方菜系分化形成，共同构成汉民族饮食的“八大菜系”。
+                        </li>
+                        <li>
+                            <div class="tabs__content">
+                                国家的历史有长有短，疆域有大有小，实力有强有弱，人口有多有少，民族构成、宗教信仰、政权性质和经济结构也有差异，故而各国的饮食文化是不一样的。
+                                从特质看，中国饮食文化突出养助益充的营卫论（素食为主，重视药膳和进补），并且讲究“色、香、味”俱全。五味调和的境界说（风味鲜明，适口者珍，有“舌头菜”之誉），奇正互变的烹调法（厨规为本，灵活变通）
+                                从影响看，中国饮食文化直接影响到日本、蒙古、朝鲜、韩国、泰国、新加坡等国家，是东方饮食文化圈的轴心；与此同时，它还间接影响到欧洲、美洲、非洲和大洋洲，像中国的素食文化、茶文化、酱醋、面食、药膳、陶瓷餐具和大豆等，都惠及全世界数十亿人。
+                                总之，中国饮食文化是一种广视野、深层次、多角度、高品位的悠久区域文化；是中华各族人民在5000多年的生产和生活实践中，在食源开发、食具研制、食品调理、营养保健和饮食审美等方面创造、积累并影响周边国家和世界的物质财富及精神财富。
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tabs__content">
+                                烹饪指的是膳食的艺术，是一种复杂而有规律地将食材转化为食物的加工过程。是对食材加工处理，使食物更可口、更好看、更好闻的处理方式与方法。一道美味佳肴，必然色香味意形养俱佳，不但让人在食用时感到满足，而且能让食物的营养更容易被人体吸收。
+                                传统的烹饪方法有：炒、爆、熘、炸、烹、煎、贴、烧、焖、炖、蒸、汆、煮、烩、炝、拌、腌、烤、卤、冻、拔丝、蜜汁、熏、卷、滑、焗。
+                            </div>
+                        </li>
+                        </ul>
+                    </div>
+                        <script src="js/indexon3.js"></script>
+                    
+                        
+                        <script id="rendered-js" >
+                            "use strict";
+                            let tabLinks = document.querySelectorAll(".tabs__link");
+                            let tabContents = document.querySelectorAll(".tabs__content");
+                            tabLinks[0].classList.add("active");
+                            tabContents[0].classList.add("active");
+                            tabLinks.forEach((tabLink, i) => {
+                                tabLink.addEventListener("click", () => {
+                                    tabLinks.forEach(tabLink => tabLink.classList.remove("active"));
+                                    tabContents.forEach(tabContent => tabContent.classList.remove("active"));
+                                    tabLink.classList.add("active");
+                                    tabContents[i].classList.add("active");
+                                });
+                            });
+                            //# sourceURL=pen.js
+                        </script>
+
+
+                        <script src="js/indexon4.js"></script>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5"><img src="img/gy(1).jpg" width="100%"></div>
+            </div>        
+            <!--空白图片-->
+            <div class="row"><img src="img/无标题.png" alt=""></div>
+            <div class="row">
+                <div class="col-lg-12" style="padding: 0px;">
+                    <img src="img/912.jpg" width="100%">
+                </div>
+            </div>
+
+            <hr><!--/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/--></hr>
+            <div class="row decn">
+                <center style="padding-top: 15px;"><p>风味人间CQ | &copy;版权所有</p></center>
+                <center><p>联系我们 | 邮箱:eotjs1433@163.com | 电话号码:18641267537</p></center>
+            </div>
+        </div>
+        <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; display: block;"><i class="fas fa-angle-up">6</i></a>
+    </body>
+</html>
